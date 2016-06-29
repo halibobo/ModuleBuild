@@ -28,7 +28,7 @@ dependencies {
 
     compile 'com.jakewharton:butterknife:7.0.1'
     compile project(':baselibrary')
-    compile project(':orderlibrary')       //订单管理组件
+//    compile project(':orderlibrary')       //订单管理组件
     compile project(':tasks:pointmanager')  //网点管理组件
 
 }
