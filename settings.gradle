@@ -1,0 +1,1 @@
+include ':app', ':baselibrary', ':tasks:ordermanager', ':tasks:pointmanager', ':orderlibrary'
