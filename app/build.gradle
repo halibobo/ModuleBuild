@@ -26,9 +26,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'com.jakewharton:butterknife:7.0.1'
+//    compile 'com.jakewharton:butterknife:7.0.1'
     compile project(':baselibrary')
-//    compile project(':orderlibrary')       //订单管理组件
+    compile project(':orderlibrary')       //订单管理组件
     compile project(':tasks:pointmanager')  //网点管理组件
 
 }

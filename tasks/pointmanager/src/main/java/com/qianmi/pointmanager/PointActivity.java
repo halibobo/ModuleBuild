@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.qianmi.baselibrary.BaseActivity;
 
+
 public class PointActivity extends BaseActivity {
 
     @Override
