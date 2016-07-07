@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">订单管理</string>
+    <string name="base_library">基础组件</string>
+</resources>

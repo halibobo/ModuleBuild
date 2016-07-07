@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_solid_blue_login_btn" android:state_pressed="false"/>
+    <item android:drawable="@drawable/shape_solid_blue_login_btn_press" android:state_pressed="true"/>
+
+</selector>
