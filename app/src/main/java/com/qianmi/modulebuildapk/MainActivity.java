@@ -34,6 +34,17 @@ public class MainActivity extends BaseActivity {
         ButterKnife.bind(this);
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+            if (data.hasExtra(AppConfig.ORDER_INTENT_VALUE)) {
+                tip.setText(data.getStringExtra(AppConfig.ORDER_INTENT_VALUE));
+            }
+        }
+    }
+
     @OnClick({R.id.btnOrderManager, R.id.btnPointManager})
     public void onClick(View view) {
         switch (view.getId()) {
@@ -59,14 +70,4 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == Activity.RESULT_OK) {
-            if (data.hasExtra(AppConfig.ORDER_INTENT_VALUE)) {
-                tip.setText(data.getStringExtra(AppConfig.ORDER_INTENT_VALUE));
-            }
-        }
-    }
 }
